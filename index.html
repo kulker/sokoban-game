@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+
+	 <meta name="viewport" content="initial-scale=0.5,maximum-scale=0.5,minimum-scale=0.5,user-scalable=no" />
+   
+    <title>Sokoban</title>
+    <script type="text/javascript" src="src/engine/core.js"></script>
+    <script type="text/javascript" src="src/game/config.js?drd"></script>
+    <script type="text/javascript" src="src/game/main.js?d=fw7uyvb4433"></script>
+<link rel="stylesheet" href="src/css/slider.css">
+     <script type="text/javascript" src="src/game/http.js"></script>
+	 <style>
+	 *{
+  margin: 0px;
+  padding: 0px;
+}
+
+#level_panel {
+    width: 70%;
+    background: #474040;
+    height: 40vw;
+   /* overflow: scroll;*/
+    padding: 3px;
+    z-index: 50;
+    position: fixed;
+    left: 30px;
+    top: 30px;
+	display:none;
+	 overflow-x: hidden; 
+    overflow-y: scroll; -webkit-overflow-scrolling: touch; 
+	
+     
+}
+#level_panel > div {
+ overflow-x: hidden; 
+     overflow-y: scroll; -webkit-overflow-scrolling: touch; 
+}
+
+
+#level_panel stong {
+}
+
+.level {
+    margin-bottom: 6px;
+    background-color: #a6bfc1;
+    display:  inline-table;
+    width: 170px;   
+    margin-left: 7px;
+	cursor:pointer;
+}
+
+#level_panel ul {
+	list-style: none;
+	margin: 0px;
+    padding: 0px;
+	display: none;
+    min-height: 90px;
+}
+
+#level_panel ul li {
+  display: flex;
+  padding: 0px;
+  margin: 0px;
+  height: 10px;
+  background-color: #849ea1;
+}
+
+#level_panel ul li span {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  padding: 0px;
+  margin: 0px;
+}
+
+.empty {
+  background-color: #849ea1;
+}
+
+.wall {
+  background-color: #4f5e60;
+}
+
+.crate {
+  background-color: #cd8c4a;
+}
+
+.spot {
+  background-color: #2ecc71;
+}
+
+.player {
+  background-color: #dc4839;
+  color: #dc4839;
+  border-radius: 50%;
+  width: 7px !important;
+  height: 7px !important;
+  margin-right: 3px !important;
+}
+
+.crate_spot {
+  background-color: #528969;
+}
+
+.user_level_check {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url(media/user_check2.png);
+  background-size: contain;
+  margin-left: 10px;
+}
+
+.user_level_prev_up {
+ 
+    background: url(media/arr_up.png) !important;
+   
+}
+
+.user_level_prev_up_w { 
+    background: url(media/arr_up_white.png) !important;   
+}
+
+.user_level_prev_down {
+display: inline-block;
+    width: 16px;
+    height: 10px;
+    background: url(media/arr_down.png);
+    background-size: contain;
+    float: right;
+    margin-right: 3PX;
+    margin-top: 9px;
+	cursor:pointer;
+	border:0px;
+}
+
+.user_level_prev_down_white {
+display: inline-block;
+    width: 16px;
+    height: 10px;
+    background: url(media/arr_down_white.png);
+    background-size: contain;
+    float: right;
+    margin-right: 3PX;   
+	cursor:pointer;
+	border:0px;
+}
+
+
+
+.has_solution {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url(media/icon-solution2_36.png);
+  background-size: contain;
+  margin-left: 10px;
+}
+
+
+.level strong {
+  display: inline-block;
+  line-height: 24px;
+  font-family: monospace;
+  font-size: 13px;
+}
+
+#level_panel_cont {
+ /* background-color: #a6bfc1;*/
+  margin-bottom: 10px;
+}
+.level header {
+height: 28px;
+    display: block;
+    margin-left: 2px;
+    padding-top: 5px;
+}	 
+.show {
+ display:block !important; 
+}
+
+.level_txt {
+  cursor:pointer;
+}
+
+#btn_level_preview {
+
+}
+	  
+	 </style>
+ </head>
+<body>
+
+<div id="level_panel">
+<div class="slidecontainer">
+  <input type="range" min="0" max="100" value="0" class="slider" id="level_range">
+  <button id="btn_level_preview" class="user_level_prev_down_white"></button>
+</div>
+<div id="level_panel_cont">
+
+</div>
+</div>
+</body>
+</html>
