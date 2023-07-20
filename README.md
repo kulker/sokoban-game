@@ -21,7 +21,7 @@ PHP and MySQL supported hosting space is required for your local or remote serve
 Install the SQL file under the db folder to a database and put the database user information in the db_connect.php file.
 
 # TODO
-User registration and login screen.
+Create user table and User registration, login screen.
 
 ![alt text](https://raw.githubusercontent.com/kulker/sokoban-game/main/screenshot/sc3.png)
 
