@@ -18,7 +18,7 @@ Sokoban is a type of transport puzzle. The player tries to move the boxes or che
 # Install 
 PHP and MySQL supported hosting space is required for your local or remote server.
 
-Install the SQL file under the db folder to a database and put the database user information in the db_connect.php file.
+Install the SQL file under the db folder to a database and put the database user information in the db_conn.php file.
 
 # TODO
 Create user table and User registration, login screen.
